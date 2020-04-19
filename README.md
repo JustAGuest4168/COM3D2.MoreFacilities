@@ -2,16 +2,21 @@
 
 UPDATES
 =======
-	2020-04-18:	
-	Modification to how data is saved, creates an additional file with the additional facilities and casino dealer data.
-	Originally the plan was to just keep the relevant data in extra files, but the whole file needs to be saved because dealer data is not deserializing properly during load (but it does deserialize properly during save).
-	Maximum Facilty Count increased from 50 to 60
+# 2020-04-18:
 
-	2020-04-15: 
-	Fix for facility upgrades maid task
+Modification to how data is saved, creates an additional file with the additional facilities and casino dealer data.
 
-	2020-04-14: 
-	First Alpha
+Originally the plan was to just keep the relevant data in extra files, but the whole file needs to be saved because dealer data is not deserializing properly during load (but it does deserialize properly during save).
+
+Maximum Facilty Count increased from 50 to 60
+
+# 2020-04-15:
+
+Fix for facility upgrades maid task
+
+# 2020-04-14: 
+
+First Alpha
 
 
 WARNING
