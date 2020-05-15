@@ -2,6 +2,14 @@
 
 UPDATES
 =======
+# 2020-05-15:
+
+Official first release
+
+Updated README and LICENSE
+
+Minor bug fix to when there are less than 12 facilities
+
 # 2020-04-18:
 
 Modification to how data is saved, creates an additional file with the additional facilities and casino dealer data.
@@ -21,17 +29,15 @@ First Alpha
 
 WARNING
 ==========================================================
-The following COM3D2 Plugin is an alpha build, it is for those brave enough to help test.
+The following COM3D2 Plugin.
 
-My plugin development is limited, by proceeding you agree that you will not hold me, 
-or any of the plugin tool developers, or KISS responsible for anything that happens to your PC or game data.
+My plugin development is limited, by proceeding you agree that you will not hold me, any of the plugin tool developers, or KISS responsible for anything that happens to your PC or game data.
 
 It is always recommended that you make a backup of game files before testing, save frequently, and save to a new save slot in case of any bugs.
-(I have had issues with saving/loading breaking, but believe I have resolved them)
 
 REQUIREMENTS
 ==========================================================
-COM3D2 Version 1.45.0
+COM3D2 Version 1.45.0 or later
 BepinEx Version 5.0.1
 
 INSTALL
@@ -42,7 +48,7 @@ USAGE DESCRIPTION
 ==========================================================
 This plugin increases the maximum facility count to 60. 
 
-This works in Facility Manager and Life Mode (GP01). It has not yet been tested Guest Mode yet.
+This works in Facility Manager, Life Mode (GP01), and Guest Mode.
 
 On any page with the Facility Grid (my name for it, not official), use the Up/Down Arrow Keys or the Mouse's Scroll Wheel to browse all facilities. 
 All of the facilities you add should be available to Maid Scheduling, as well as triggering end-of-day event unlocks.
@@ -52,14 +58,25 @@ Fix to allow scrolling during the Facility Updgrades Maid Task, note that only t
 
 LEGAL
 ==========================================================
-
+GNU Lesser General Public License v3.0
 
 NOTES
 ==========================================================
-Please do not steal or distribute my code/plugin without explicit permission
-
 Please contact Guest4168 on the Discord to report any comments, suggestions, and errors (including in this readme).
-Yes I know my readme writing sucks and this probably needs legal stuff/license added.
 
-I am looking for suggestions on how I can make it more prominent that the Plugin is active, in case it ever gets added to an all in one installer. 
+FUTURE UPDATES
+==========================================================
+Facility Re-Skinning
+-Hoping to implement a way to re-skin facilities so that the "luxury" version of facilities can use different textures for existing models and maybe add user-defined additional props (fancy hotel bed, stage chandelier, etc.). Maybe even use the Facility Recipe for determining how to re-skin.
+
+Active Plugin Indicator
+-Add some UI indicator that this plugin is active. Right now there is not a scrollbar or anything that tells you have more facilities and that you can find them by scrolling or using arrow keys. I'm also thinking that it would be nice to have a list of events for Life Mode on the side, right now you have to scroll through every facility to review all the available events. Suggestiongs for implementing this feature are welcome. 
+
+Page Scrolling
+-May allow scrolling to be adjustable in future so that you scroll through pages of facilities instead of rows.
+
+DISTANT FUTURE UPDATES
+==========================================================
+Facility Creator
+-Tools for creating custom facilities for daily work, Life Mode, yotogi, etc..
 
