@@ -38,6 +38,7 @@ It is always recommended that you make a backup of game files before testing, sa
 REQUIREMENTS
 ==========================================================
 COM3D2 Version 1.45.0 or later
+
 BepinEx Version 5.0.1 https://github.com/BepInEx/BepInEx
 
 INSTALL
