@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace COM3D2.MoreFacilities.Plugin.Core
 {
-    [BepInPlugin("org.guest4168.plugins.morefacilitiesplugin", "More Facilities Plug-In", "1.0.0.0")]
+    [BepInPlugin("org.guest4168.plugins.morefacilitiesplugin", "More Facilities Plug-In", "1.0.1.0")]
     public class MoreFacilities : BaseUnityPlugin
     {
         #region Main Code

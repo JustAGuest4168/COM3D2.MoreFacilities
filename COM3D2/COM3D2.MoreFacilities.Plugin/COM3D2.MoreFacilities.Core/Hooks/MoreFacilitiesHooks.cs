@@ -1,6 +1,7 @@
 ﻿using BepInEx.Harmony;
 using HarmonyLib;
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace COM3D2.MoreFacilities.Plugin.Core
@@ -71,15 +72,11 @@ namespace COM3D2.MoreFacilities.Plugin.Core
 
                 //Cache the Facility data to restore after vanilla saving
                 savedFacilities = new System.Collections.Generic.List<Facility>();
+                savedFacilities.AddRange(((System.Collections.Generic.List<Facility>)typeof(FacilityManager).GetField("m_FacilityArray", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(__instance.FacilityMgr)).GetRange(12, __instance.FacilityMgr.GetFacilityArray().Length - 12));
 
-                //We only care if there are more than 12
-                if (__instance.FacilityMgr.GetFacilityArray().Length > 12)
-                {
-                    savedFacilities.AddRange(((System.Collections.Generic.List<Facility>)typeof(FacilityManager).GetField("m_FacilityArray", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(__instance.FacilityMgr)).GetRange(12, __instance.FacilityMgr.GetFacilityArray().Length - 12));
-
-                    //Remove all the extra facilities for vanilla saving
-                    ((System.Collections.Generic.List<Facility>)typeof(FacilityManager).GetField("m_FacilityArray", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(__instance.FacilityMgr)).RemoveRange(12, __instance.FacilityMgr.GetFacilityArray().Length - 12);
-                }
+                //Remove all the extra facilities for vanilla saving
+                ((System.Collections.Generic.List<Facility>)typeof(FacilityManager).GetField("m_FacilityArray", BindingFlags.Instance | BindingFlags.NonPublic).GetValue(__instance.FacilityMgr)).RemoveRange(12, __instance.FacilityMgr.GetFacilityArray().Length - 12);
+                
                 //Prep Casino Data
                 patcher_casino_vanilla_save = true;
             }
