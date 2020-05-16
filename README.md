@@ -2,6 +2,12 @@
 
 UPDATES
 =======
+# 2020-05-16:
+
+V1.0.1.0 Release
+
+Bug fix to vanilla save file, the check for 12 facilities in previous version caused the error and was unneccessary. All tests have been reperformed and verified this time.
+
 # 2020-05-15:
 
 Official first release
